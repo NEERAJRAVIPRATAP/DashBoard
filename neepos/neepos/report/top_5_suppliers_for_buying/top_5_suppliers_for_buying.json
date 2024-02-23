@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-23 15:40:17.737717",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2024-02-23 16:14:31.026537",
+ "modified_by": "Administrator",
+ "module": "NeePOS",
+ "name": "Top 5 Suppliers For Buying",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \r\n    po.`supplier`, \r\n    SUM(poi.`qty`) AS total_quantity_purchased\r\nFROM \r\n    `tabPurchase Order Item` poi\r\nJOIN \r\n    `tabPurchase Order` po ON poi.`parent` = po.`name`\r\nGROUP BY \r\n    po.`supplier`\r\nORDER BY \r\n    total_quantity_purchased DESC\r\nLIMIT 5;\r\n\r\n",
+ "ref_doctype": "Purchase Order",
+ "report_name": "Top 5 Suppliers For Buying",
+ "report_type": "Query Report",
+ "roles": []
+}

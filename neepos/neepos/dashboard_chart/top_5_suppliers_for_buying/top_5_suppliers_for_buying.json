@@ -1,0 +1,33 @@
+{
+ "chart_name": "Top 5 Suppliers for Buying",
+ "chart_type": "Report",
+ "creation": "2024-02-23 16:16:54.856500",
+ "custom_options": "{\"x_field\": \"supplier\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"total_quantity_purchased\", \"color\": \"#dba9a9\"}], \"y_fields\": [\"total_quantity_purchased\"], \"colors\": [\"#dba9a9\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-02-23 16:16:54.938674",
+ "modified_by": "Administrator",
+ "module": "NeePOS",
+ "name": "Top 5 Suppliers for Buying",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Top 5 Suppliers For Buying",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "supplier",
+ "y_axis": [
+  {
+   "color": "#dba9a9",
+   "y_field": "total_quantity_purchased"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "cards": [
+  {
+   "card": "Total Sales Before Tax"
+  },
+  {
+   "card": "Sales Tax Collected"
+  },
+  {
+   "card": "Average Transaction Value"
+  },
+  {
+   "card": "Total Items Sold"
+  },
+  {
+   "card": "Gross Earnings"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Top 5 Suppliers for Buying",
+   "width": "Half"
+  },
+  {
+   "chart": "Top 5 Selling Item Groups",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-23 15:01:15.797905",
+ "dashboard_name": "NeePOS",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-23 16:19:43.407631",
+ "modified_by": "Administrator",
+ "module": "NeePOS",
+ "name": "NeePOS",
+ "owner": "Administrator"
+}

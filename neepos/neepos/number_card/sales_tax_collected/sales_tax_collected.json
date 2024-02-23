@@ -1,0 +1,21 @@
+{
+ "creation": "2024-02-23 15:04:57.632546",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "null",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Sales Tax Collected",
+ "method": "neepos.neepos.api.get_sales_tax_collected",
+ "modified": "2024-02-23 15:04:57.632546",
+ "modified_by": "Administrator",
+ "module": "NeePOS",
+ "name": "Sales Tax Collected",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}
