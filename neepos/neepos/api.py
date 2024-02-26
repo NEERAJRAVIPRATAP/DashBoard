@@ -26,8 +26,8 @@ def get_average_transaction_value():
     # Query total transaction value and number of transactions from the Sales Invoice table
     result = frappe.db.sql("""
         SELECT SUM(base_grand_total) AS total_transaction_value, COUNT(name) AS number_of_transactions
-        FROM `tabSales Invoice`
-        WHERE docstatus = 1
+        FROM `tabSales Invoice`   
+        WHERE docstatus = 1  
     """, as_dict=True)
 
     if result and result[0]['number_of_transactions'] > 0:    

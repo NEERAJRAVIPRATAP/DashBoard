@@ -8,4 +8,4 @@ def get_data():
 			"label": _("NeePOS")
 		}
 	]
-   
+      

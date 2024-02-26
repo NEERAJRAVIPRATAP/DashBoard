@@ -12,7 +12,7 @@
  "modified": "2024-02-26 11:59:18.281013",
  "modified_by": "Administrator",
  "module": "NeePOS",
- "name": "Top 5 Selling Item Groups",
+ "name": "Top 5 Selling Item Groups",   
  "owner": "Administrator",
  "prepared_report": 0,
  "query": "SELECT\r\n    ti.`item_group`,\r\n    SUM(si.`qty`) AS total_quantity_sold\r\nFROM\r\n    `tabSales Invoice Item` si\r\nJOIN\r\n    `tabItem` ti ON si.`item_code` = ti.`name`\r\nWHERE\r\n    ti.`item_group` IS NOT NULL\r\nGROUP BY\r\n    ti.`item_group`\r\nORDER BY\r\n    total_quantity_sold DESC\r\nLIMIT 5;\r\n",
