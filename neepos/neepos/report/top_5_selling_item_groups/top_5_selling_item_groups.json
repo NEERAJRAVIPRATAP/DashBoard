@@ -1,0 +1,45 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-23 15:44:34.968919",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2024-02-26 11:59:18.281013",
+ "modified_by": "Administrator",
+ "module": "NeePOS",
+ "name": "Top 5 Selling Item Groups",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    ti.`item_group`,\r\n    SUM(si.`qty`) AS total_quantity_sold\r\nFROM\r\n    `tabSales Invoice Item` si\r\nJOIN\r\n    `tabItem` ti ON si.`item_code` = ti.`name`\r\nWHERE\r\n    ti.`item_group` IS NOT NULL\r\nGROUP BY\r\n    ti.`item_group`\r\nORDER BY\r\n    total_quantity_sold DESC\r\nLIMIT 5;\r\n",
+ "ref_doctype": "Sales Invoice Item",
+ "report_name": "Top 5 Selling Item Groups",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Item Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "All"
+  }
+ ]
+}

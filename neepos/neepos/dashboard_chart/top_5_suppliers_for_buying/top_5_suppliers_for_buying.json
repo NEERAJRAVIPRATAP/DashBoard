@@ -15,7 +15,7 @@
  "module": "NeePOS",
  "name": "Top 5 Suppliers for Buying",
  "number_of_groups": 0,
- "owner": "Administrator",
+ "owner": "Administrator",       
  "report_name": "Top 5 Suppliers For Buying",
  "roles": [],
  "time_interval": "Yearly",

@@ -16,7 +16,7 @@ def get_sales_tax_collected():
     # Query total sales tax collected from the Sales Invoice table
     total_sales_tax_collected = frappe.db.sql("""
         SELECT SUM(base_total_taxes_and_charges) AS total_sales_tax_collected
-        FROM `tabSales Invoice`
+        FROM `tabSales Invoice`      
         WHERE docstatus = 1
     """, as_dict=True)
 
@@ -30,7 +30,7 @@ def get_average_transaction_value():
         WHERE docstatus = 1
     """, as_dict=True)
 
-    if result and result[0]['number_of_transactions'] > 0:
+    if result and result[0]['number_of_transactions'] > 0:    
         total_transaction_value = result[0]['total_transaction_value']
         number_of_transactions = result[0]['number_of_transactions']
         average_transaction_value = total_transaction_value / number_of_transactions
@@ -45,7 +45,7 @@ def get_total_items_sold():
         SELECT SUM(qty) AS total_items_sold
         FROM `tabSales Invoice Item`
         JOIN `tabSales Invoice` ON `tabSales Invoice Item`.`parent` = `tabSales Invoice`.`name`
-        WHERE `tabSales Invoice`.`docstatus` = 1
+        WHERE `tabSales Invoice`.`docstatus` = 1    
     """, as_dict=True)
 
     return total_items_sold[0]['total_items_sold'] if total_items_sold else 0
@@ -59,3 +59,4 @@ def get_gross_earnings():
     """, as_dict=True)
 
     return gross_earnings[0]['total_net_earnings'] if gross_earnings else 0
+    
