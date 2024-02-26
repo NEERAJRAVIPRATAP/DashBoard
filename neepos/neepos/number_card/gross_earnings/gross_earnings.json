@@ -14,8 +14,8 @@
  "module": "NeePOS",
  "name": "Gross Earnings",
  "owner": "Administrator",
- "report_function": "Sum",
+ "report_function": "Sum",      
  "show_percentage_stats": 1,
- "stats_time_interval": "Daily",
+ "stats_time_interval": "Daily",    
  "type": "Custom"
 }

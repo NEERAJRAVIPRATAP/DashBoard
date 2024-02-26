@@ -11,11 +11,11 @@
  "method": "neepos.neepos.api.get_average_transaction_value",
  "modified": "2024-02-23 15:09:19.048411",
  "modified_by": "Administrator",
- "module": "NeePOS",
+ "module": "NeePOS",     
  "name": "Average Transaction Value",
  "owner": "Administrator",
- "report_function": "Sum",
+ "report_function": "Sum",    
  "show_percentage_stats": 1,
  "stats_time_interval": "Daily",
- "type": "Custom"
+ "type": "Custom"   
 }
